@@ -1,0 +1,74 @@
+@font-face {
+    font-family: nerd-fonts-windows;
+    /* src: url(./fonts/3270/3270-Medium\ Nerd\ Font\ Complete.otf); */
+    src: url(./fonts/3270/3270-Medium\ Nerd\ Font\ Complete\ Windows\ Compatible.otf);
+
+    font-family: nerd-fonts;
+    src: url(./fonts/3270/3270-Medium\ Nerd\ Font\ Complete.otf);
+}
+
+
+
+/* BODY */
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: rgb(49, 48, 48);
+    color: white;
+    padding: 0;
+    margin: 20;
+}
+
+
+
+/* HEADER */
+header {
+    background-color: rgb(26, 26, 26);
+    
+    padding: 20px;
+    margin: 20px;
+    margin-top: 25px;
+
+    text-align: center; 
+}
+
+
+
+/* SECTION */
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+section div {
+    margin: 10%;
+}
+
+
+
+/* FOOTER  */ /* not sure if all of the fancy stuff is nessesory but it works */
+footer div {
+    margin: 0;
+    padding: 0;
+}
+footer div div {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif, nerd-fonts-windows, nerd-fonts;
+    background: rgb(26, 26, 26);
+    color: grey;
+
+    font-size: 17px;
+    text-align: center;
+
+    width: 500px;
+
+    padding: 8px;
+}
+footer a {
+    color: grey;
+    text-decoration: none;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
