@@ -1,11 +1,23 @@
 /* #region FONTS */
 @font-face {
-    font-family: nerd-fonts-windows;
-    /* src: url(./fonts/3270/3270-Medium\ Nerd\ Font\ Complete.otf); */
-    src: url(./fonts/3270/3270-Medium\ Nerd\ Font\ Complete\ Windows\ Compatible.otf);
-
-    font-family: nerd-fonts;
+    font-family: "font-awesome-solid";
+    src: url(./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf) format("truetype");
+}
+@font-face {
+    font-family: "font-awesome-regular";
+    src: url(./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf) format("truetype"); 
+}
+@font-face {
+    font-family: "font-awesome-brands"; 
+    src: url(./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf) format("truetype");
+}
+@font-face {
+    font-family: "nerd-fonts";
     src: url(./fonts/3270/3270-Medium\ Nerd\ Font\ Complete.otf);
+}
+@font-face {
+    font-family: "nerd-fonts-windows";
+    src: url(./fonts/3270/3270-Medium\ Nerd\ Font\ Complete\ Windows\ Compatible.otf);
 }
 /* #endregion */
 
@@ -14,7 +26,7 @@
 /* #region ROOT */
 :root{
     font-size: 16px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif, nerd-fonts-windows, nerd-fonts;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif, font-awesome-solid, nerd-fonts-windows, nerd-fonts;
 
     --text-primary:         #b6b6b6;
     --text-secondary:       #ececec;
@@ -131,7 +143,7 @@ main p {
     margin-left: 1rem;
     /* font-size: 20px; */
 }
-.nav-link i {   /* nav ul li a  i */
+.nav-link .link-icon {   /* nav ul li a  i */
     font-size: 34px;
     min-width: 2rem;
     margin: 0 1.3rem;
@@ -150,11 +162,11 @@ main p {
     letter-spacing: 0.3ch;
     width: 100%;
 }
-.logo i {
+.logo .link-icon {
     transform: rotate(0deg);
     transition: transform var(--transition-speed);
 }
-.navbar:hover .logo i {
+.navbar:hover .logo .link-icon {
     transform: rotate(-180deg);
 }
 /* #endregion */ /* navbar */
@@ -171,6 +183,7 @@ main p {
 .footer div div {
     background: var(--bg-secondary);
     color: grey;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif, nerd-fonts-windows, nerd-fonts;
     
     text-align: center;
     
