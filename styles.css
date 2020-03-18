@@ -1,16 +1,16 @@
 /* #region FONTS */
 @font-face {
     font-family: "font-awesome-solid";
-    src: url(./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf) format("truetype");
+    src: url(./fonts/fa-solid-900.ttf) format("truetype");
 }
-@font-face {
+/* @font-face {
     font-family: "font-awesome-regular";
     src: url(./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf) format("truetype"); 
 }
 @font-face {
     font-family: "font-awesome-brands"; 
     src: url(./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf) format("truetype");
-}
+} */
 @font-face {
     font-family: "nerd-fonts";
     src: url(./fonts/3270/3270-Medium\ Nerd\ Font\ Complete.otf);
