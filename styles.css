@@ -1,8 +1,4 @@
 /* #region FONTS */
-@font-face {
-    font-family: "font-awesome-solid";
-    src: url(./fonts/fa-solid-900.ttf) format("truetype");
-}
 /* @font-face {
     font-family: "font-awesome-regular";
     src: url(./node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf) format("truetype"); 
@@ -18,6 +14,10 @@
 @font-face {
     font-family: "nerd-fonts-windows";
     src: url(./fonts/3270/3270-Medium\ Nerd\ Font\ Complete\ Windows\ Compatible.otf);
+}
+@font-face {
+    font-family: "font-awesome-solid";
+    src: url(./fonts/fa-solid-900.ttf) format("truetype");
 }
 /* #endregion */
 
