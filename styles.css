@@ -1,3 +1,4 @@
+/* #region FONTS */
 @font-face {
     font-family: nerd-fonts-windows;
     /* src: url(./fonts/3270/3270-Medium\ Nerd\ Font\ Complete.otf); */
@@ -6,69 +7,239 @@
     font-family: nerd-fonts;
     src: url(./fonts/3270/3270-Medium\ Nerd\ Font\ Complete.otf);
 }
+/* #endregion */
 
 
 
-/* BODY */
+/* #region ROOT */
+:root{
+    font-size: 16px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif, nerd-fonts-windows, nerd-fonts;
+
+    --text-primary:         #b6b6b6;
+    --text-secondary:       #ececec;
+    --navbar-bg-primary:    #23232e;
+    --navbar-bg-secondary:  #141418;
+    --bg-primary:           rgb(49, 48, 48);
+    --bg-secondary:         rgb(26, 26, 26);
+    --purple:               #6649b8;
+    --transition-speed:       600ms;
+}
+/* #endregion */
+
+
+
+/* #region BODY */
 body {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    background: rgb(49, 48, 48);
-    color: white;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     padding: 0;
-    margin: 20;
+    margin: 0;
+    /* margin-left: 5rem; */
 }
-
-
-
-/* HEADER */
-header {
-    background-color: rgb(26, 26, 26);
-    
-    padding: 20px;
-    margin: 20px;
-    margin-top: 25px;
-
-    text-align: center; 
+/* scrollbar styling */
+body::-webkit-scrollbar {
+    width: 0.25rem;
 }
-
-
-
-/* SECTION */
-section {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
 }
-section div {
-    margin: 10%;
+body::-webkit-scrollbar-thumb {
+    background: var(--purple);
 }
-
-
-
-/* FOOTER  */ /* not sure if all of the fancy stuff is nessesory but it works */
-footer div {
+body.header {
     margin: 0;
     padding: 0;
 }
-footer div div {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif, nerd-fonts-windows, nerd-fonts;
-    background: rgb(26, 26, 26);
-    color: grey;
+/* #endregion */
 
-    font-size: 17px;
+
+
+/* #region HEADER */
+header {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: 6rem;
+
     text-align: center;
-
-    width: 500px;
-
-    padding: 8px;
 }
-footer a {
-    color: grey;
+/* #endregion */
+
+
+
+/* #region MAIN */
+main {
+    /* display: flex; */
+    /* flex-direction: column; */
+    text-align: center;
+    margin-left: 5rem;
+    padding: 1rem;
+}
+main p {
+    text-align: left;
+    font-size: 32px;
+}
+/* #endregion */
+
+
+
+/* #region NAVBAR */
+.navbar {   /* nav */
+    position: fixed;
+    background-color: var(--navbar-bg-primary);
+    transition: width 200ms ease;
+    overflow: scroll;
+}
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+.navbar-nav {   /* nav  ul */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.nav-item {     /* nav ul  li */
+    width: 100%;
+}
+.nav-item:last-child {  /* last icon to bottom of screen */
+    margin-top: auto;
+}
+.nav-link {     /* nav ul li  a */
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
     text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
 }
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--navbar-bg-secondary);
+    color: var(--text-secondary);
+}
+.link-text {    /* nav ul li  span */
+    display: none;
+    margin-left: 1rem;
+    /* font-size: 20px; */
+}
+.nav-link i {   /* nav ul li a  i */
+    font-size: 34px;
+    min-width: 2rem;
+    margin: 0 1.3rem;
+    color: var(--purple);
+    transition: var(--transition-speed);
+}
+/* logo */
+.logo {     /* nav ul li  a */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+.logo i {
+    transform: rotate(0deg);
+    transition: transform var(--transition-speed);
+}
+.navbar:hover .logo i {
+    transform: rotate(-180deg);
+}
+/* #endregion */ /* navbar */
+
+
+
+/* #region FOOTER */
 .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+.footer div div {
+    background: var(--bg-secondary);
+    color: grey;
+    
+    text-align: center;
+    
+    width: 30rem;
+    padding: 0.6rem;
+}
+.footer div {
+    margin: 1rem;
+    padding: 0;
+}
+.footer a {
+    color: grey;
+    text-decoration: none;
+}
+/* #endregion */
+
+
+
+/* #region responsive-design */
+
+/* #region small-screens */
+@media only screen and (max-width: 599px) {
+    /* #region navbar */
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+    .logo {
+        display: none;
+    }
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .nav-link {
+        justify-content: center;
+    }
+    main {
+        margin: 0;
+    }
+    header {
+        margin: 1rem;
+    }
+    .footer{
+        display: none;
+    }
+    /* #endregion */ /* navbar */
+}
+/* #endregion */ /* small-screens */
+
+/* #region large-screens */
+@media only screen and (min-width: 600px) {
+    /* #region navbar */
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+    .navbar:hover {
+        width: 16rem;
+    }
+    .navbar:hover .link-text {
+        display: block;
+    }
+    .footer div div {
+        margin-left: 5rem;
+    }
+    /* #endregion */ /* navbar */
+}
+/* #endregion */ /* large-screens */
+
+/* #endregion */ /* resposive-design */
