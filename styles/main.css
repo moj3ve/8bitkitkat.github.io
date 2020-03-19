@@ -125,7 +125,7 @@ main p {
   position: fixed;
   background-color: var(--navbar-bg-primary);
   transition: width 200ms ease;
-  overflow: scroll;
+  overflow: hidden;
   scrollbar-width: none;
 }
 .navbar::-webkit-scrollbar {
@@ -221,8 +221,8 @@ main p {
 
 /* #region external-links */
 .ext {
-  margin-top: auto;
   display: none;
+  margin-top: auto;
 }
 .twitter-devider {
   margin: 0.25rem;
@@ -291,6 +291,9 @@ main p {
   .logo {
     display: none;
   }
+  .ext {
+    display: none;
+  }
   .navbar-nav {
     flex-direction: row;
   }
@@ -320,7 +323,6 @@ main p {
     top: 0;
     width: 5rem;
     height: 100vh;
-    overflow: hidden;
   }
   .navbar:hover {
     width: 16rem;
