@@ -86,6 +86,12 @@ main p {
     margin: 0;
   }
   /* #endregion */ /* navbar */
+
+  /* #region header */
+  :root {
+    font-size: 0.8rem;
+  }
+  /* #endregion */ /* header */
 }
 /* #endregion */ /* small-screens */
 
