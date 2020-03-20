@@ -1,2 +1,5 @@
 # firebase cache file
 .firebase
+
+# vscode folder
+.dist
