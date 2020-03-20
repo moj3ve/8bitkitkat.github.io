@@ -12,14 +12,14 @@
   font-family: "font-awesome-solid";
   src: url(./fonts/font-awesome/fa-solid-900.ttf) format("truetype");
 } */
-@font-face {
+/* @font-face {
   font-family: "nerd-fonts";
   src: url(./fonts/3270/3270-Medium\Nerd\Font\Complete.otf);
 }
 @font-face {
   font-family: "nerd-fonts-windows";
   src: url(./fonts/3270/3270-Medium\Nerd\Font\Complete\Windows\Compatible.otf);
-}
+} */
 /* #endregion  */ /* FONTS */
 /* ############# */
 
@@ -30,7 +30,7 @@
 :root {
   font-size: 1rem;
   /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif, font-awesome-solid, nerd-fonts-windows, nerd-fonts; */
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif, nerd-fonts-windows, nerd-fonts;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
   /* varibles */
   --text-primary: #b6b6b6;
@@ -53,14 +53,8 @@
 
 
 /* ############ */
-/* #region BODY */
-body {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  padding: 0;
-  margin: 0;
+/* #region Body */
 
-}
 /* scrollbar styling */
 body::-webkit-scrollbar {
   width: 0.25rem;
@@ -71,45 +65,8 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: var(--purple-primary);
 }
-body.header {
-  margin: 0;
-  padding: 0;
-}
-/* #endregion */
-/* ############ */
 
-
-
-/* ############## */
-/* #region HEADER */
-header {
-  background-color: var(--bg-secondary);
-  color: var(--text-secondary);
-
-  padding: 1rem;
-  margin: 1rem;
-  margin-top: 1rem;
-  margin-left: 6rem;
-
-  text-align: center;
-}
-/* #endregion */
-/* ############## */
-
-
-
-/* ############ */
-/* #region MAIN */
-main {
-  text-align: center;
-  margin-left: 5rem;
-  padding: 1rem;
-}
-main p {
-  text-align: left;
-  font-size: 2rem;
-}
-/* #endregion */
+/* #endregion */ /* body */
 /* ############ */
 
 
@@ -299,12 +256,6 @@ main p {
   }
   .nav-link {
     justify-content: center;
-  }
-  main {
-    margin: 0;
-  }
-  header {
-    margin: 1rem;
   }
   /* #endregion */ /* navbar */
 }
