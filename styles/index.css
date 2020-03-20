@@ -79,11 +79,12 @@ main p {
 /* #region small-screens */
 @media only screen and (max-width: 599px) {
   /* #region navbar */
-  .index-header {
+  header {
     margin: 1rem;
   }
-  .index-main {
+  main {
     margin: 0;
+    margin-bottom: 3rem;
   }
   /* #endregion */ /* navbar */
 
