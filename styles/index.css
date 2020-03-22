@@ -15,10 +15,6 @@
   --purple-primary: #6649b8;
   --transition-speed: 600ms;
   --fade-transition-speed: 200ms;
-
-  /* firefox scrollbar styling */
-  scrollbar-color: var(--purple-primary) #1e1e24;
-  scrollbar-width: thin;
 }
 /* #endregion */
 /* ############ */
@@ -75,7 +71,6 @@ main p {
 /* #region responsive-design */
 
 
-
 /* #region small-screens */
 @media only screen and (max-width: 599px) {
   /* #region navbar */
@@ -96,13 +91,11 @@ main p {
 }
 /* #endregion */ /* small-screens */
 
-
 /* #region large-screens */
 @media only screen and (min-width: 600px) {
 
 }
 /* #endregion */ /* large-screens */
-
 
 
 /* #endregion */ /* resposive-design */

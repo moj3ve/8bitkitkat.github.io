@@ -1,30 +1,3 @@
-/* ############# */
-/* #region FONTS */
-/* @font-face {
-  font-family: "font-awesome-regular";
-  src: url(./fonts/font-awesome/fa-regular-400.ttf) format("truetype"); 
-}
-@font-face {
-  font-family: "font-awesome-brands"; 
-  src: url(./fonts/font-awesome/fa-brands-400.ttf) format("truetype");
-}
-@font-face {
-  font-family: "font-awesome-solid";
-  src: url(./fonts/font-awesome/fa-solid-900.ttf) format("truetype");
-} */
-/* @font-face {
-  font-family: "nerd-fonts";
-  src: url(./fonts/3270/3270-Medium\Nerd\Font\Complete.otf);
-}
-@font-face {
-  font-family: "nerd-fonts-windows";
-  src: url(./fonts/3270/3270-Medium\Nerd\Font\Complete\Windows\Compatible.otf);
-} */
-/* #endregion  */ /* FONTS */
-/* ############# */
-
-
-
 /* ############ */
 /* #region ROOT */
 :root {
@@ -32,7 +5,7 @@
   /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif, font-awesome-solid, nerd-fonts-windows, nerd-fonts; */
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
-  /* varibles */
+  /* variables */
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --navbar-bg-primary: #23232e;
@@ -40,7 +13,7 @@
   --bg-primary: rgb(49, 48, 48);
   --bg-secondary: rgb(26, 26, 26);
   --purple-primary: #6649b8;
-  --transition-speed: 600ms;
+  --transition-speed: 550ms;
   --fade-transition-speed: 200ms;
 
   /* firefox scrollbar styling */
@@ -122,6 +95,7 @@ body::-webkit-scrollbar-thumb {
   height: 5rem;
   color: var(--text-primary);
   text-decoration: none;
+  font-size: 1.2rem;
   /* make icons greyscale */
   filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
@@ -162,7 +136,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   color: var(--text-secondary);
   background: var(--bg-secondary);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   letter-spacing: 0.3ch;
   width: 100%;
 }
