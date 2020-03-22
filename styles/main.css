@@ -3,14 +3,14 @@
 :root {
   font-size: 1rem;
   /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif, font-awesome-solid, nerd-fonts-windows, nerd-fonts; */
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'sans-serif', 'Arial';
 
   /* variables */
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --navbar-bg-primary: #23232e;
   --navbar-bg-secondary: #141418;
-  --bg-primary: rgb(49, 48, 48);
+  --bg-primary: rgb(48, 48, 48);
   --bg-secondary: rgb(26, 26, 26);
   --purple-primary: #6649b8;
   --transition-speed: 550ms;
@@ -152,12 +152,22 @@ body::-webkit-scrollbar-thumb {
 
 /* #region external-links */
 .ext {
-  display: none;
-  margin-top: auto;
+	display: none;
+	justify-content: center;
+	padding: 0.2rem;
+	margin: 0px;
+	margin-bottom: 0px;
+	margin-top: auto;
 }
-.twitter-devider {
-  margin: 0.25rem;
+.preview {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 5rem;
 }
+/* .nav-item-preview:last-child {
+	margin-top: auto;
+} */
 /* #endregion */ /* external-links */
 
 
@@ -210,7 +220,6 @@ body::-webkit-scrollbar-thumb {
 /* #region responsive-design */
 
 
-
 /* #region small-screens */
 @media only screen and (max-width: 599px) {
   /* #region navbar */
@@ -240,7 +249,6 @@ body::-webkit-scrollbar-thumb {
 }
 /* #endregion */ /* small-screens */
 
-
 /* #region large-screens */
 @media only screen and (min-width: 600px) {
   /* #region navbar */
@@ -253,7 +261,7 @@ body::-webkit-scrollbar-thumb {
     width: 16rem;
   }
   .navbar:hover .link-text {
-    display: block;
+		display: block;
   }
   .navbar:hover .nav-item:last-child {
     margin: 0;
@@ -261,11 +269,13 @@ body::-webkit-scrollbar-thumb {
 
   .navbar:hover .ext {
     display: flex;
-  }
+	}
+	.navbar:hover .preview {
+		display: none;
+	}
   /* #endregion */ /* navbar */
 }
 /* #endregion */ /* large-screens */
-
 
 
 /* #endregion */ /* resposive-design */
