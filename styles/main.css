@@ -1,32 +1,14 @@
-/* ############ */
-/* #region ROOT */
-:root {
-  font-size: 1rem;
-  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif, font-awesome-solid, nerd-fonts-windows, nerd-fonts; */
-  font-family: 'Open Sans', 'sans-serif', 'Arial';
+@import "/styles/root.css";
 
-  /* variables */
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --navbar-bg-primary: #23232e;
-  --navbar-bg-secondary: #141418;
-  --bg-primary: rgb(48, 48, 48);
-  --bg-secondary: rgb(26, 26, 26);
-  --purple-primary: #6649b8;
-  --transition-speed: 550ms;
-  --fade-transition-speed: 200ms;
 
-  /* firefox scrollbar styling */
-  scrollbar-color: var(--purple-primary) #1e1e24;
-  scrollbar-width: thin;
+
+/* Body */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 0;
+  margin: 0;
 }
-/* #endregion */
-/* ############ */
-
-
-
-/* ############ */
-/* #region Body */
 
 /* scrollbar styling */
 body::-webkit-scrollbar {
@@ -39,12 +21,50 @@ body::-webkit-scrollbar-thumb {
   background: var(--purple-primary);
 }
 
-/* #endregion */ /* body */
-/* ############ */
+
+
+/* Header */
+header {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+
+  padding: 1rem;
+  margin: 1rem;
+  margin-top: 1rem;
+  margin-left: 6rem;
+
+  text-align: center;
+}
 
 
 
-/* ############## */
+/* Main */
+main {
+  font-size: 1.3rem;
+  margin-left: 5rem;
+  padding: 1rem;
+}
+.centered {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.tiny-text {
+  font-size: 0.8rem;
+}
+.medium-text {
+  font-size: 1.2rem;
+} 
+.big-text {
+  font-size: 1.5rem;
+}
+.strike-through {
+  text-decoration: line-through;
+}
+
+
+
+/* ============== */
 /* #region NAVBAR */
 
 
@@ -100,10 +120,15 @@ body::-webkit-scrollbar-thumb {
   filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
 }
+/* simple filters to make 
+the (in color) flutter icon stand out less  */
+.flutter-icon svg {
+  filter: brightness(60%);
+}
 .nav-link:hover {
   /* nav ul li  a
   remove grayscale when hovered over */
-  filter: grayscale(0%) opacity(1);
+  filter: grayscale(0%) opacity(1) brightness(100%);
   background: var(--navbar-bg-secondary);
   color: var(--text-secondary);
 }
@@ -212,17 +237,18 @@ body::-webkit-scrollbar-thumb {
 
 
 /* #endregion */ /* NAVBAR */
-/* ############## */
+/* ============== */
 
 
 
-/* ######################### */
+/* ========================= */
 /* #region responsive-design */
 
 
-/* #region small-screens */
+/* small-screens */
+/* wide-ways */
 @media only screen and (max-width: 599px) {
-  /* #region navbar */
+  /* navbar */
   .navbar {
     bottom: 0;
     width: 100vw;
@@ -230,6 +256,9 @@ body::-webkit-scrollbar-thumb {
   }
   .logo {
     display: none;
+  }
+  .home-icon {
+    display: inline;
   }
   .ext {
     display: none;
@@ -240,22 +269,32 @@ body::-webkit-scrollbar-thumb {
   .nav-link {
     justify-content: center;
   }
-  /* #endregion */ /* navbar */
-}
-@media only screen and (max-height: 418px) {
-  .logo {
-    display: none;
+
+  header {
+    margin: 1rem;
+  }
+  main {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+  
+  :root {
+    font-size: 0.8rem;
   }
 }
-/* #endregion */ /* small-screens */
 
-/* #region large-screens */
+
+
+/* large-screens */
 @media only screen and (min-width: 600px) {
-  /* #region navbar */
+  /* navbar */
   .navbar {
     top: 0;
     width: 5rem;
     height: 100vh;
+  }
+  .navbar .home-icon {
+    display: none;
   }
   .navbar:hover {
     width: 16rem;
@@ -270,13 +309,22 @@ body::-webkit-scrollbar-thumb {
   .navbar:hover .ext {
     display: flex;
 	}
-	.navbar:hover .preview {
+	.navbar:hover .ext .preview {
 		display: none;
-	}
-  /* #endregion */ /* navbar */
+  }
 }
-/* #endregion */ /* large-screens */
 
+/* small screens  -  loaded last for reasons */
+/* long-ways */
+@media only screen and (max-height: 480px) {
+  /* navbar */
+  .logo {
+    display: none;
+  }
+  .ext { 
+    display: none;
+  }
+}
 
-/* #endregion */ /* resposive-design */
-/* ######################### */
+/* #endregion */ /* responsive-design */
+/* ========================= */

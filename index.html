@@ -1,167 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>8BitKitKat's website</title>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" href="/favicon.png">
+	<title>8BitKitKat's website</title>
 
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/index.css"/>
-  </head>
+	<link rel="stylesheet" href="/styles/index.css"/>
+</head>
 
-  <body>
-    <nav class="navbar">
-      <ul class="navbar-nav">
-        
-        <!-- #region LOGO -->
-        <li class="logo">
-          <a href="./index.html" class="nav-link">
-            <span class="link-text">8BitKitKat</span>
-            <svg>
-              <use 
-              fill="currentColor"
-              xlink:href="./icons/icons.svg#fa-angle-double-right" 
-              x="0" y="0" />
-            </svg>
-          </a>
-        </li>
-        <!-- #endregion --> <!-- LOGO -->
+<body>
+	<nav class="navbar">
+		<ul class="navbar-nav">
+			
+			<!-- #region LOGO / home -->
+			<li class="logo">
+				<a href="./index.html" class="nav-link">
+					<span class="link-text">8BitKitKat</span>
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="./icons/icons.svg#fa-angle-double-right" 
+						x="0" y="0" />
+					</svg>
+				</a>
+			</li>
 
-        <!-- #region navigation -->
-        <li class="nav-item"> 
-          <a href="#" class="nav-link">
-            <svg>
-              <use 
-              fill="currentColor"
-              xlink:href="./icons/icons.svg#fa-cat" 
-              x="0" y="0" />
-            </svg>
-            <span class="link-text">Cats</span>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-						<svg>
-							<use 
+			<li class="nav-item home-icon">
+				<a href="./index.html" class="nav-link">
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="./icons/icons.svg#fa-home" 
+						x="0" y="0" />
+					</svg>
+				</a>
+			</li>
+			<!-- #endregion --> <!-- LOGO -->
+			
+			<!-- #region navigation -->
+			<li class="nav-item flutter-icon">
+				<a href="./flutter/" class="nav-link">
+					<svg viewBox="0 0 64 64" width="3rem" height="3rem">
+						<use 
 							fill="currentColor"
-							xlink:href="./icons/icons.svg#fa-meteor" 
+							href="./icons/icons.svg#flutter-icon" 
 							x="0" y="0" />
-						</svg>
-						<span class="link-text">Space</span>
-          </a>
-        </li>
+					</svg>
+					<span class="link-text">Flutter</span>
+				</a>
+			</li>
 
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-						<svg>
-							<use
-							fill="currentColor"
-							xlink:href="./icons/icons.svg#fa-space-shuttle"
-							x="0" y="0" />
-						</svg>
-            <span class="link-text">Ships</span>
-          </a>
-				</li>
-				
-				<li class="nav-item ext preview">
-					<a href="#" class="nav-link preview">
-						<svg>
-							<use
-							fill="currentColor"
-							xlink:href="./icons/icons.svg#icon-link"
-							/>
-							<!-- x="0" y="0"  -->
-						</svg>
-					</a>
-				</li>
-        <!-- #endregion --> <!-- navigation -->
+			<!-- <li class="nav-item"> 
+				<a href="./pages/grid.html" class="nav-link">
+					<svg>
+						<use 
+						fill="currentColor"
+						href="./icons/icons.svg#fa-th" 
+						x="0" y="0" />
+					</svg>
+					<span class="link-text">Grid</span>
+				</a>
+			</li> -->
+			
+			<li class="nav-item"> 
+				<a href="/asdf/" class="nav-link">
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="./icons/icons.svg#fa-cat" 
+						x="0" y="0" />
+					</svg>
+					<span class="link-text">Cats</span>
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="./icons/icons.svg#fa-meteor" 
+						x="0" y="0" />
+					</svg>
+					<span class="link-text">Space</span>
+				</a>
+			</li>
+			<!-- #endregion --> <!-- navigation -->
+			
+			<!-- #region external-links -->
+			<li class="nav-item ext preview">
+				<a href="#" class="nav-link preview">
+					<svg width="3rem" height="3rem">
+						<use
+						fill="currentColor"
+						href="./icons/icons.svg#icon-link"
+						/>
+					</svg>
+				</a>
+			</li>
+			
+			<li class="nav-item ext">
+				<a href="https://twitter.com/8bitkitkat" class="nav-link ext">
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="./icons/icons.svg#icon-twitter"
+						x="0" y="0" />
+					</svg>
+				</a>
+
+				<a href="https://github.com/8bitkitkat" class="nav-link ext">
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="./icons/icons.svg#icon-github" 
+						x="0" y="0" />
+					</svg>
+				</a>
+
+				<a href="#" class="nav-link ext">
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="./icons/icons.svg#icon-linkedin-square" 
+						x="0" y="0"
+						/>
+					</svg>
+				</a>
+			</li>
+			<!-- #endregion --> <!-- external-links -->
+
+			<!-- #region Theme -->
+			<li class="nav-item theme-icon">
+				<a href="#" class="nav-link">
+					<svg width="3rem" height="3rem">
+						<use
+						fill="currentColor"
+						href="./icons/icons.svg#fa-adjust" 
+						x="0" y="0" />
+					</svg>
+					<!-- <svg id="fa-adjust" viewBox="0 0 512 512">
+						<path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z" />
+					</svg> -->
+					<span class="link-text">Theme</span>
+				</a>
+			</li>
+			<!-- #endregion --> <!-- Theme -->
+
+		</ul>
+	</nav>
+
+	<header>
+		<h1>8bitkitkat.github.io</h1>
+	</header>
+
+	<main>
+		
+			<h2 class="centered">Hi,</h2>
+			<h2 class="centered">Thanks for having a look at my website!</h2>
+
+			<p class="centered"> <span class="strike-through">I don't really have much here... yet</span> 
+				I've added two, boring and uninteresting, flutter projects I made.</p>
+
+			<p class="centered tiny-text">also please excuse my terrible writing skills, I'm more of a coder myself..</p>
 			
 
-        <li class="nav-item ext">
-					
-					<a href="https://twitter.com/8bitkitkat" class="nav-link ext">
-						<svg>
-							<use 
-							fill="currentColor"
-							xlink:href="./icons/icons.svg#icon-twitter"
-							x="0" y="0" />
-						</svg>
-					</a>
+		<p class="medium-text" >
+			I know all the icons are broken on firefox at the moment. 
+			I know what's wrong and how to fix it, but its not a super quick fix. 
+			Firefox doesn't like my method of loading svg images, meaning to fix it would require me to 
+			have the svg data right in the html instead of just referencing it. Rather inconvenient if you ask me.
+		</p>
+		<p class="big-text">
+			Tempore quia eius distinctio tempore iste. Dolorum quos praesentium
+			aliquid.Suscipit occaecati reprehenderit nobis est. Quia qui illo odio
+			itaque provident consequatur praesentium dignissimos. Repellendus
+			dolores harum aspernatur facere et. Sit sint nihil ad incidunt unde
+			laborum. Qui consequuntur ut et sunt. Qui eaque quaerat et. At mollitia
+			modi aut.
+		</p> 
+		<p class="big-text">
+			Voluptatem et vel in consequatur doloremque. Necessitatibus
+			delectus ut quod quia molestiae. Nihil explicabo voluptatum non
+			voluptatem. Aperiam doloremque iure et ipsam voluptas omnis. Iusto iusto
+			doloremque voluptatem repudiandae est consequatur voluptatem.
+		</p>
+		<p class="big-text">
+			Asperioresaperiam accusantium praesentium alias asperiores sint esse quas. Ut eius
+			iste iste ratione aliquid sequi nam minima. Repellat consequuntur omnis
+			omnis qui incidunt. In et cum sit et sed consequuntur. Voluptate enim
+			sequi adipisci necessitatibus id ratione dolores quia. Hic nihil
+			possimus eveniet unde et nesciunt. Aspernatur eos reiciendis quo. Non
+			odit et nihil non possimus. Similique ea ipsam alias quod temporibus
+			aperiam id et. final sentence.
+		</p>
 
-          <a href="https://github.com/8bitkitkat" class="nav-link ext">
-            <svg>
-              <use 
-              fill="currentColor"
-              xlink:href="./icons/icons.svg#icon-github" 
-              x="0" y="0" />
-            </svg>
-          </a>
-
-          <a href="#" class="nav-link ext">
-            <svg>
-              <use 
-              fill="currentColor"
-              xlink:href="./icons/icons.svg#icon-linkedin-square" 
-              x="0" y="0" />
-            </svg>
-					</a>
-					
-        </li>
-        <!-- #endregion --> <!-- external-links -->
-
-        <!-- #region Theme -->
-        <li class="nav-item theme-icon">
-          <a href="#" class="nav-link">
-						<svg>
-							<use
-							fill="currentColor"
-							xlink:href="./icons/icons.svg#fa-adjust" 
-              x="0" y="0" />
-						</svg>
-            <span class="link-text">Theme</span>
-          </a>
-        </li>
-        <!-- #endregion --> <!-- Theme -->
-
-      </ul>
-    </nav>
-
-    <header class="index-header">
-      <h1>8bitkitkat.github.io</h1>
-    </header>
-
-    <main class="index-main">
-      <h2>Hi,</h2>
-      <h2>Thanks for having a look at my website!</h2>
-
-      I don't really have much here... yet, but the nav-bar it neat right?
-
-      <p>
-        Tempore quia eius distinctio tempore iste. Dolorum quos praesentium
-        aliquid.Suscipit occaecati reprehenderit nobis est. Quia qui illo odio
-        itaque provident consequatur praesentium dignissimos. Repellendus
-        dolores harum aspernatur facere et. Sit sint nihil ad incidunt unde
-        laborum. Qui consequuntur ut et sunt. Qui eaque quaerat et. At mollitia
-        modi aut.
-      </p> 
-      <p>
-        Voluptatem et vel in consequatur doloremque. Necessitatibus
-        delectus ut quod quia molestiae. Nihil explicabo voluptatum non
-        voluptatem. Aperiam doloremque iure et ipsam voluptas omnis. Iusto iusto
-        doloremque voluptatem repudiandae est consequatur voluptatem.
-      </p>
-      <p>
-        Asperioresaperiam accusantium praesentium alias asperiores sint esse quas. Ut eius
-        iste iste ratione aliquid sequi nam minima. Repellat consequuntur omnis
-        omnis qui incidunt. In et cum sit et sed consequuntur. Voluptate enim
-        sequi adipisci necessitatibus id ratione dolores quia. Hic nihil
-        possimus eveniet unde et nesciunt. Aspernatur eos reiciendis quo. Non
-        odit et nihil non possimus. Similique ea ipsam alias quod temporibus
-        aperiam id et. final sentence.
-      </p>
-      
-
-    </main>
-  </body>
+	</main>
+</body>
 </html>

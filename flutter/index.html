@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+  <title>Flutter Apps</title>
+
+  <link rel="stylesheet" href="./flutter.css" />
+</head>
+<body>
+  <nav class="navbar">
+		<ul class="navbar-nav">
+			
+			<!-- #region LOGO / home -->
+			<li class="logo">
+				<a href="/index.html" class="nav-link">
+					<span class="link-text">8BitKitKat</span>
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="/icons/icons.svg#fa-angle-double-right" 
+						x="0" y="0" />
+					</svg>
+				</a>
+			</li>
+
+			<li class="nav-item home-icon">
+				<a href="/index.html" class="nav-link">
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="/icons/icons.svg#fa-home" 
+						x="0" y="0" />
+					</svg>
+				</a>
+			</li>
+			<!-- #endregion --> <!-- LOGO -->
+
+      <!-- #region navigation -->
+      <li class="nav-item">
+        <a class="nav-link" onclick="history.back()" href="#">
+          <svg width="3rem" height="3rem">
+            <use 
+              fill="currentColor"
+              href="/icons/icons.svg#fa-angle-left" 
+              x="0" y="0" />
+          </svg>
+          <span class="link-text">Back</span>
+        </a>
+      </li>
+
+      <!-- <li class="nav-item flutter-icon">
+        <a href="/flutter/" class="nav-link">
+          <svg viewBox="0 0 64 64" width="3rem" height="3rem">
+            <use 
+              fill="currentColor"
+              href="/icons/icons.svg#flutter-icon" 
+              x="0" y="0" />
+          </svg>
+          <span class="link-text">Flutter</span>
+        </a>
+      </li> -->
+			
+			<li class="nav-item"> 
+				<a href="#" class="nav-link">
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="/icons/icons.svg#fa-cat" 
+						x="0" y="0" />
+					</svg>
+					<span class="link-text">Cats</span>
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="#" class="nav-link">
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="/icons/icons.svg#fa-meteor" 
+						x="0" y="0" />
+					</svg>
+					<span class="link-text">Space</span>
+				</a>
+			</li>
+			<!-- #endregion --> <!-- navigation -->
+			
+			<!-- #region external-links -->
+			<li class="nav-item ext preview">
+				<a href="#" class="nav-link preview">
+					<svg width="3rem" height="3rem">
+						<use
+						fill="currentColor"
+						href="/icons/icons.svg#icon-link"
+						/>
+					</svg>
+				</a>
+			</li>
+			
+			<li class="nav-item ext">
+				<a href="https://twitter.com/8bitkitkat" class="nav-link ext">
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="/icons/icons.svg#icon-twitter"
+						x="0" y="0" />
+					</svg>
+				</a>
+
+				<a href="https://github.com/8bitkitkat" class="nav-link ext">
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="/icons/icons.svg#icon-github" 
+						x="0" y="0" />
+					</svg>
+				</a>
+
+				<a href="#" class="nav-link ext">
+					<svg width="3rem" height="3rem">
+						<use 
+						fill="currentColor"
+						href="/icons/icons.svg#icon-linkedin-square" 
+						x="0" y="0"
+						/>
+					</svg>
+				</a>
+			</li>
+			<!-- #endregion --> <!-- external-links -->
+
+			<!-- #region Theme -->
+			<li class="nav-item theme-icon">
+				<a href="#" class="nav-link">
+					<svg width="3rem" height="3rem">
+						<use
+						fill="currentColor"
+						href="/icons/icons.svg#fa-adjust" 
+						x="0" y="0" />
+					</svg>
+					<!-- <svg id="fa-adjust" viewBox="0 0 512 512">
+						<path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z" />
+					</svg> -->
+					<span class="link-text">Theme</span>
+				</a>
+			</li>
+			<!-- #endregion --> <!-- Theme -->
+
+		</ul>
+  </nav>
+
+
+  <header class="index-header">
+    <h1>Flutter Apps</h1>
+	</header>
+  
+  <main>
+
+		<p class="centered lead">
+			Here I have my flutter projects, neither are anything special, 
+			in fact they're rather useless and hardly of my own creation.
+		</p>
+
+		<section class="content-main">
+			<section class="content-binary-clock">
+
+				<h2 class="centered heading">
+					<a href="./binary-clock/">Binary Clock</a>
+				</h2>
+
+				<p>
+					This is really just a carbon copy from this
+					<a target="_blank" href="https://fireship.io/lessons/build-a-binary-clock-flutter/">Fireship.io</a> 
+					tutorial, with the only differences being that I omitted all the deprecated code.
+					This is designed to only work in landscape, it will have issues on a portrait screen.
+					There is no real functionality to this other than it being a clock. Looks neat though.
+				</p>
+			</section>
+
+			<section class="content-cupertino-app">
+				<h2 class="centered heading">
+					<a href="./cupertino-app-demo/">Cupertino App</a>
+				</h2>
+
+				<p>
+					This is also just a carbon copy of the video at the top of the 
+					<a target="_blank" href="https://flutter.dev/docs/get-started/flutter-for/ios-devs">Flutter For iOS Developers</a>
+					page, nothing interesting or functional just a web-based flutter iOS 
+					app with a few little Cupertino things. It should function just fine 
+					in both landscape and portrait. It should also have dynamic light and dark modes.
+				</p>
+
+			</section>
+		</section>
+
+
+		
+		<!-- <div class="centered">
+			<a href="./binary-clock/">Binary Clock</a>
+		</div> -->
+	</main>
+  
+</body>
+</html>
