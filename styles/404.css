@@ -1,0 +1,25 @@
+@import "/styles/main.css";
+
+
+
+/* no nav-bar */
+header {
+  margin: 1rem;
+}
+main {
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.link-text {
+  display: block;
+}
+
+.nav-link {
+  padding-right: 2.8rem;
+  justify-content: center;
+}
+
+.back-button {
+  margin-top: 3.8rem;
+}
