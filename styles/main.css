@@ -38,7 +38,8 @@ header {
 
 
 
-/* Main */
+/* ============ */
+/* #region Main */
 main {
   font-size: 1.3rem;
   margin-left: 5rem;
@@ -61,12 +62,13 @@ main {
 .strike-through {
   text-decoration: line-through;
 }
+/* #endregion */ /* Main */
+/* ============ */
 
 
 
 /* ============== */
 /* #region NAVBAR */
-
 
 
 /* #region the-bar */
@@ -116,19 +118,14 @@ main {
   color: var(--text-primary);
   text-decoration: none;
   font-size: 1.2rem;
-  /* make icons greyscale */
+  /* make icons grayscale */
   filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
 }
-/* simple filters to make 
-the (in color) flutter icon stand out less  */
-.flutter-icon svg {
-  filter: brightness(60%);
-}
 .nav-link:hover {
-  /* nav ul li  a
-  remove grayscale when hovered over */
-  filter: grayscale(0%) opacity(1) brightness(100%);
+  /* nav ul li  a */
+  /* remove grayscale when hovered over */
+  filter: grayscale(0%) opacity(1);
   background: var(--navbar-bg-secondary);
   color: var(--text-secondary);
 }
@@ -235,7 +232,6 @@ the (in color) flutter icon stand out less  */
 /* #endregion */ /* fade-animation */
 
 
-
 /* #endregion */ /* NAVBAR */
 /* ============== */
 
@@ -284,7 +280,6 @@ the (in color) flutter icon stand out less  */
 }
 
 
-
 /* large-screens */
 @media only screen and (min-width: 600px) {
   /* navbar */
@@ -314,6 +309,7 @@ the (in color) flutter icon stand out less  */
   }
 }
 
+
 /* small screens  -  loaded last for reasons */
 /* long-ways */
 @media only screen and (max-height: 480px) {
@@ -325,6 +321,7 @@ the (in color) flutter icon stand out less  */
     display: none;
   }
 }
+
 
 /* #endregion */ /* responsive-design */
 /* ========================= */
