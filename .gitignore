@@ -1,5 +1,3 @@
-# firebase cache file
-.firebase
+# local .htaccess file for testing
+.htaccess
 
-# vscode folder
-.dist
