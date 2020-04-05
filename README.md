@@ -1,10 +1,8 @@
 # 8bitkitkat.github.io
 
-## Hi,
+## Hay!
 
 Thank you for having a look at my website source,
-
-I've added two, rather simple, flutter projects I made.
 
 I plan to use this website as a portfolio, a place to practice and a general all purpose place for things that don't warrant their own site.
 
