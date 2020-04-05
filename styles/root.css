@@ -3,15 +3,145 @@
   /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif, font-awesome-solid, nerd-fonts-windows, nerd-fonts; */
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
-  /* variables */
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --navbar-bg-primary: #23232e;
-  --navbar-bg-secondary: #141418;
-  --bg-primary: rgb(49, 48, 48);
-  --bg-secondary: rgb(26, 26, 26);
-  --purple-primary: #6649b8;
-  --purple-secondary: rgba(68, 2, 129, 0.445);
-  --transition-speed: 600ms;
-  --fade-transition-speed: 200ms;
+
+  /**/
+  /*** Variables */
+  /**/
+
+  /* animation things */
+  --fadeTransitionSpeed:  200ms;
+  --transitionSpeed:      600ms;
+  --transitionSpeed2:     300ms;
+
+
+  /* shadows */
+  --shadow:               #00000088;
+
+  /* x-offset | y-offset | blur-distance | shadow-strength | shadow-color */
+  --surfaceShadow01dp: 0 0  0.1rem  0.01rem var(--shadow);
+  --surfaceShadow02dp: 0 0  0.2rem  0.01rem var(--shadow);
+  --surfaceShadow03dp: 0 0  0.3rem  0.01rem var(--shadow);
+  --surfaceShadow04dp: 0 0  0.4rem  0.01rem var(--shadow);
+  --surfaceShadow06dp: 0 0  0.6rem  0.01rem var(--shadow);
+  --surfaceShadow08dp: 0 0  0.8rem  0.01rem var(--shadow);
+  --surfaceShadow12dp: 0 0  1.0rem  0.01rem var(--shadow);
+  --surfaceShadow16dp: 0 0  1.2rem  0.01rem var(--shadow);
+  --surfaceShadow24dp: 0 0  1.8rem    0.01rem var(--shadow);
+
+}
+
+
+
+/**/
+/*** Light Theme */
+/**/
+.light {
+
+  /* Primary Colors */
+  --primary:              #311b92; 
+  --primaryVariant:       #000063;
+
+  --primaryColor:         #311b92; 
+  --primaryDarkColor:     #000063;
+  --primaryLightColor:    #6746c3;
+
+
+  /* Secondary Colors */
+  --secondary:            #ff9800;
+  --secondaryVariant:     #c66900;
+
+  --secondaryColor:       #ff9800;
+  --secondaryDarkColor:   #c66900;
+  --secondaryLightColor:  #ffc947; 
+
+
+  /* Background */
+  --background:           #ffffff;
+  --surface:              #ffffff;
+  --error:                #b00020;
+
+  /* Background Elevation */
+  --surface01dp:          #ffffff;
+  --surface02dp:          #ffffff;
+  --surface03dp:          #ffffff;
+  --surface04dp:          #ffffff;
+  --surface06dp:          #ffffff;
+  --surface08dp:          #ffffff;
+  --surface12dp:          #ffffff;
+  --surface16dp:          #ffffff;
+  --surface24dp:          #ffffff;
+
+
+  /* Text */
+  --onPrimary:            #ffffff;
+  --onSecondary:          #000000;
+  --onBackground:         #000000;
+  --onSurface:            #000000;
+  --onError:              #ffffff;
+
+  --primaryTextColor:     #ffffff;
+  --secondaryTextColor:   #000000;
+
+  /* scrollbar */
+  --scrollbarBackground:  #cccccc;
+}
+
+
+/* 
+  the little comment blocks are to signify the differences between the color schemes
+*/
+
+/**/
+/*** Dark Theme */
+/**/
+.dark {
+
+  /* Primary Colors */
+  --primary:              #6746c3; /**/
+  --primaryVariant:       #000063;
+
+  --primaryColor:         #311b92;
+  --primaryDarkColor:     #000063;
+  --primaryLightColor:    #6746c3;
+
+
+  /* Secondary Colors */
+  --secondary:            #ff9800;
+  --secondaryVariant:     #ff9800; /**/
+
+  --secondaryColor:       #ff9800;
+  --secondaryDarkColor:   #c66900;
+  --secondaryLightColor:  #ffc947; 
+
+
+  /* Background */
+  --background:           #121212; /**/
+  --surface:              #121212; /**/
+  --error:                #cf6679; /**/
+
+  /* Background Elevation */ /* all different */
+  --surface01dp:          #1d1d1d;
+  --surface02dp:          #222222;
+  --surface03dp:          #242424;
+  --surface04dp:          #262626;
+  --surface06dp:          #2c2c2c;
+  --surface08dp:          #2d2d2d;
+  --surface12dp:          #323232;
+  --surface16dp:          #343434;
+  --surface24dp:          #373737;
+
+
+  /* Text */
+  --onPrimary:            #000000; /**/
+  --onSecondary:          #000000;
+  --onBackground:         #ffffff; /**/
+  --onSurface:            #ffffff; /**/
+  --onError:              #000000; /**/
+
+  --primaryTextColor:     #ffffff;
+  --secondaryTextColor:   #000000;
+
+
+  /* scrollbar */
+  --scrollbarBackground:  #1e1e24; /**/
 }

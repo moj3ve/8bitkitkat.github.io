@@ -2,12 +2,7 @@
 
 
 
-.heading {
+.content-heading {
   margin-top: 5rem;
 }
 
-.content-main a {
-  color: rgb(201, 201, 201);
-  text-decoration: none;
-  text-decoration: underline;
-}

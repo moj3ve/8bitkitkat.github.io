@@ -4,29 +4,31 @@
 
 /* Body */
 body {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
+  background-color: var(--background);
+  color: var(--onBackground);
   padding: 0;
   margin: 0;
+  transition: var(--transitionSpeed);
 }
 
 /* scrollbar styling */
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.40rem;
 }
 body::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: var(--scrollbarBackground);
 }
 body::-webkit-scrollbar-thumb {
-  background: var(--purple-primary);
+  background: var(--primary);
 }
 
 
 
 /* Header */
 header {
-  background-color: var(--bg-secondary);
-  color: var(--text-secondary);
+  background-color: var(--surface01dp);
+  box-shadow: var(--surfaceShadow01dp);
+  color: var(--onSurface);
 
   padding: 1rem;
   margin: 1rem;
@@ -34,6 +36,13 @@ header {
   margin-left: 6rem;
 
   text-align: center;
+
+  border-radius: 0.5rem;
+  transition: var(--transitionSpeed);
+}
+header:hover {
+  background-color: var(--surface04dp);
+  box-shadow: var(--surfaceShadow04dp);
 }
 
 
@@ -62,6 +71,15 @@ main {
 .strike-through {
   text-decoration: line-through;
 }
+main a {
+  color: currentColor;
+  text-decoration: none;
+  text-decoration: underline;
+  transition: var(--transitionSpeed2);
+}
+main a:hover {
+  background-color: var(--secondaryVariant);
+}
 /* #endregion */ /* Main */
 /* ============ */
 
@@ -75,10 +93,12 @@ main {
 .navbar {
   /* nav */
   position: fixed;
-  background-color: var(--navbar-bg-primary);
+  background-color: var(--surface02dp);
+  box-shadow: var(--surfaceShadow02dp);
   transition: width 200ms ease;
   overflow: hidden;
   scrollbar-width: none;
+  transition: var(--transitionSpeed2);
 }
 .navbar::-webkit-scrollbar {
   background: transparent;
@@ -112,22 +132,25 @@ main {
 }
 .nav-link {
   /* nav ul li  a */
+  /* background: var(--surface02dp);
+  box-shadow: var(--surfaceShadow02dp); */
   display: flex;
   align-items: center;
   height: 5rem;
-  color: var(--text-primary);
   text-decoration: none;
   font-size: 1.2rem;
+  color: var(--onSurface);
+  transition: var(--transitionSpeed);
   /* make icons grayscale */
-  filter: grayscale(100%) opacity(0.7);
-  transition: var(--transition-speed);
+  filter: grayscale(100%) opacity(60%);
 }
 .nav-link:hover {
   /* nav ul li  a */
   /* remove grayscale when hovered over */
   filter: grayscale(0%) opacity(1);
-  background: var(--navbar-bg-secondary);
-  color: var(--text-secondary);
+  background: var(--surface03dp);
+  box-shadow: var(--surfaceShadow03dp);
+  /* color: var(--text-secondary); */
 }
 .link-text {
   /* nav ul li  span */
@@ -139,12 +162,15 @@ main {
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
-  color: var(--purple-primary);
-  transition: var(--transition-speed);
+  color: var(--primary);
+  /* transition: var(--transitionSpeed); */
 }
-.theme-icon {
+.theme-button {
+  background: var(--surface02dp);
+  box-shadow: var(--surfaceShadow02dp);
   margin: 0px;
   margin-bottom: 0px;
+  /* transition: var(--transitionSpeed2); */
 }
 /* #endregion */ /* items-and-icons */
 
@@ -156,18 +182,21 @@ main {
   text-transform: uppercase;
   margin-bottom: 1rem;
   text-align: center;
-  color: var(--text-secondary);
-  background: var(--bg-secondary);
+  /* color: var(--text-secondary); */
+  background: var(--surface03dp);
+  box-shadow: var(--surfaceShadow03dp);
   font-size: 1.4rem;
   letter-spacing: 0.3ch;
   width: 100%;
+  transition: var(--transitionSpeed2);
 }
 .logo svg {
   transform: rotate(0deg);
-  transition: transform var(--transition-speed);
+  transition: transform var(--transitionSpeed);
 }
 .navbar:hover .logo svg {
   transform: rotate(-180deg);
+  
 }
 /* #endregion */ /* logo */
 
@@ -193,20 +222,21 @@ main {
 /* #endregion */ /* external-links */
 
 
+
 /* #region fade-animation */
 .ext {
-  -webkit-animation: fadein var(--fade-transition-speed);
-     -moz-animation: fadein var(--fade-transition-speed);
-      -ms-animation: fadein var(--fade-transition-speed);
-       -o-animation: fadein var(--fade-transition-speed);
-          animation: fadein var(--fade-transition-speed);
+  -webkit-animation: fadein var(--fadeTransitionSpeed);
+     -moz-animation: fadein var(--fadeTransitionSpeed);
+      -ms-animation: fadein var(--fadeTransitionSpeed);
+       -o-animation: fadein var(--fadeTransitionSpeed);
+          animation: fadein var(--fadeTransitionSpeed);
 }
 .link-text {
-  -webkit-animation: fadein var(--fade-transition-speed);
-     -moz-animation: fadein var(--fade-transition-speed);
-      -ms-animation: fadein var(--fade-transition-speed);
-       -o-animation: fadein var(--fade-transition-speed);
-          animation: fadein var(--fade-transition-speed);
+  -webkit-animation: fadein var(--fadeTransitionSpeed);
+     -moz-animation: fadein var(--fadeTransitionSpeed);
+      -ms-animation: fadein var(--fadeTransitionSpeed);
+       -o-animation: fadein var(--fadeTransitionSpeed);
+          animation: fadein var(--fadeTransitionSpeed);
 }
 
 @keyframes fadein {
@@ -293,6 +323,8 @@ main {
   }
   .navbar:hover {
     width: 16rem;
+    background-color: var(--surface03dp);
+    box-shadow: var(--surfaceShadow03dp);
   }
   .navbar:hover .link-text {
 		display: block;

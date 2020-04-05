@@ -6,7 +6,9 @@
   <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
   <title>Flutter Apps</title>
 
-  <link rel="stylesheet" href="./flutter.css" />
+	<link rel="stylesheet" href="./flutter.css" />
+	
+	<script defer src="/scripts/theme.js"></script>
 </head>
 <body>
   <nav class="navbar">
@@ -131,7 +133,7 @@
 			<!-- #endregion --> <!-- external-links -->
 
 			<!-- #region Theme -->
-			<li class="nav-item theme-icon">
+			<li class="nav-item theme-button" id="themeButton">
 				<a href="#" class="nav-link">
 					<svg width="3rem" height="3rem">
 						<use
@@ -139,12 +141,9 @@
 						href="/icons/icons.svg#fa-adjust" 
 						x="0" y="0" />
 					</svg>
-					<!-- <svg id="fa-adjust" viewBox="0 0 512 512">
-						<path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z" />
-					</svg> -->
 					<span class="link-text">Theme</span>
-				</a>
-			</li>
+        </a>
+      </li>
 			<!-- #endregion --> <!-- Theme -->
 
 		</ul>
@@ -157,7 +156,7 @@
   
   <main>
 
-		<p class=" lead">
+		<p class="lead">
 			Here I have my flutter projects, neither are anything special, 
 			in fact they're rather useless and hardly of my own creation. 
 		</p>
@@ -181,7 +180,7 @@
 		<section class="content-main">
 			<section class="content-binary-clock">
 
-				<h2 class="centered heading">
+				<h2 class="centered content-heading">
 					<a href="./binary-clock/">Binary Clock</a>
 				</h2>
 
@@ -197,7 +196,7 @@
 			</section>
 
 			<section class="content-cupertino-app">
-				<h2 class="centered heading">
+				<h2 class="centered content-heading">
 					<a href="./cupertino-app-demo/">Cupertino App</a>
 				</h2>
 
