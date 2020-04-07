@@ -1,23 +1,23 @@
-const themeMap = {
-  dark: "light",
+themeMap = {
   light: "dark",
+  dark: "light",
 };
 
-const theme = localStorage.getItem('theme')
-  || (tmp = Object.keys(themeMap)[0],
-      localStorage.setItem('theme', tmp),
-      tmp);
-const bodyClass = document.body.classList;
+theme = localStorage.getItem('theme') || (tmp = Object.keys(themeMap)[0],
+  localStorage.setItem('theme', tmp),
+  tmp);
+bodyClass = document.body.classList;
 bodyClass.add(theme);
 
 function toggleTheme() {
-  const current = localStorage.getItem('theme');
-  const next = themeMap[current];
+  current = localStorage.getItem('theme');
+  next = themeMap[current];
 
   bodyClass.replace(current, next);
   localStorage.setItem('theme', next);
 }
 
+// theme button
 document.getElementById('themeButton').onclick = toggleTheme;
 
 // document.getElementById('header').onclick = toggleTheme;
